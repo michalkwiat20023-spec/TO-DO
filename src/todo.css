@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+.title-container{
+  display: flex;
+  justify-content: center;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+}
+.task-text-input{
+  width: 50vw;
+  height: 3vh;
+  border-radius: 10px;
+  border: black 2px solid;
+}
+.filter-button-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  gap: 1vw;
+}
+.filter-button{
+  height: 4vh;
+  width: 10vw;
+  box-shadow: 0px 0px 7px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: white;
+}
+.filter-button:hover{
+  background-color: rgba(100, 239, 255, 0.4);
+}
+.filter-button-marked{
+  height: 4vh;
+  width: 10vw;
+  box-shadow: 0px 0px 7px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(100, 239, 255, 0.671);
+}
+.search-input{
+  margin-top: 3vh;
+  width: 30vw;
+  height: 2vh;
+  border: black 2px solid;
+  border-radius: 10px;
+}
+.list-item-container{
+  width: 100vw;
+}
+.todo-list-item{
+  display: flex;
+  align-items: center;
+  border-top: black 1px solid;
+  height: 5vh;
+}
+.todo-list-item-marked{
+  display: flex;
+  align-items: center;
+  border-top: black 1px solid;
+  color: gray;
+  height: 5vh;
+}
+.checkbox{
+  width: 2vw;
+  height: 2vw;
+  appearance: none;
+  outline: black 1px solid;
+  border-radius: 50px;
+  outline-offset: 2px;
+  transition: 300ms ease;
+}
+.checkbox:checked{
+  background-color: black;
+}
+h1{
+  text-align: center;
+}
+h2{
+  margin: 0px;
+  margin-left: .5vw;
+  position: relative;
+}
+.done-text:after{
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: gray;
+  animation-name: strike;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes strike{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100;
+  }
+}
+.text-editing-input{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 2.5vh;
+}
+.text-change-button{
+  background-color: transparent;
+  border: 0px;
+  margin-left: auto;
+}
+.delete-button{
+  width: 3vw;
+  color: red;
+  font-size: x-large;
+  border: 0px;
+  background-color: transparent;
+}
