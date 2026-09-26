@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import TaskInput from './TaskInput';
-import TaskFilters from './taskFilters';
+import TaskFilters from './TaskFilters';
 import TaskList from './TaskList';
 import Statistics from './Statistics';
 
